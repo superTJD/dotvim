@@ -1,4 +1,4 @@
 dotvim
 ======
-This is my vim config files.
+This is configuration files of vim
 ln -s ~/.vim/vimrc ~/.vimrc
