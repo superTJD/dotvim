@@ -1,12 +1,25 @@
 set encoding=utf-8
 set langmenu=zh_CN.UTF-8 
-set sw=4	"Set auto Tab and Tab width to 4 spaces 
-set ts=4 
+
+
 set spelllang=de_de  "Turn on spell check
 
 set number  "Turn on numbers before line
 hi Normal ctermbg=NONE
 
+set exrc "source .vimcr from current working directory"
+set secure
+
+"Set auto Tab and Tab width to 4 spaces 
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set noexpandtab
+
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py" "load default config for ycm
+let g:ycm_path_to_python_interpreter = '/usr/bin/python2'
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
 
 """""Begin VBundle"""""""""""
 set nocompatible              " be iMproved, required
@@ -37,6 +50,12 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
 Plugin 'lervag/vim-latex'
+
+Plugin 'scrooloose/nerdtree'
+
+Plugin 'tpope/vim-pathogen'
+
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
