@@ -21,6 +21,8 @@ let g:ycm_path_to_python_interpreter = '/usr/bin/python2'
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
 
+let g:latex_viewer = 'mupdf'
+
 """""Begin VBundle"""""""""""
 set nocompatible              " be iMproved, required
 filetype off                  " required
