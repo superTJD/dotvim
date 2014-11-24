@@ -1,8 +1,6 @@
 set encoding=utf-8
 set langmenu=zh_CN.UTF-8 
-
-
-set spelllang=de_de  "Turn on spell check
+autocmd FileType tex setlocal spelllang=de_de  "Turn on spell check on tex file
 
 set number  "Turn on numbers before line
 hi Normal ctermbg=NONE
