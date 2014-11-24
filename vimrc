@@ -1,6 +1,7 @@
 set encoding=utf-8
 set langmenu=zh_CN.UTF-8 
 autocmd FileType tex setlocal spelllang=de_de  "Turn on spell check on tex file
+autocmd FileType tex setlocal spell
 
 set number  "Turn on numbers before line
 hi Normal ctermbg=NONE
@@ -20,6 +21,8 @@ let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
 
 let g:latex_viewer = 'mupdf'
+
+let g:languagetool_jar='$HOME/.vim/LanguageTool/languagetool-commandline.jar'
 
 """""Begin VBundle"""""""""""
 set nocompatible              " be iMproved, required
@@ -46,6 +49,7 @@ Plugin 'git://git.wincent.com/command-t.git'
 "Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
+"
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
@@ -56,6 +60,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-pathogen'
 
 Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'LanguageTool'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
